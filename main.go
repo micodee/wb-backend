@@ -1,6 +1,8 @@
 package main
 
 import (
+	"backend/database"
+	"backend/pkg/mysql"
 	"backend/routes"
 	"fmt"
 
@@ -10,6 +12,9 @@ import (
 func main() {
 	e := echo.New()
 	
+	mysql.DatabaseInit()
+	database.RunMigration()
+
 	routes.Routes(e.Group("api/v1"))
 
 	port := "5001"
