@@ -15,4 +15,4 @@ c.Response().Header().Set(echo.HeaderContentType, echo.MIMEApplicationJSON) || c
 c.Response().WriteHeader(200) || c.Response().WriteHeader(http.statusOK)
 
 buat database = mysql > models > database
-buat product = models > repo > 
+buat product = models > repo > dto > controllers > routes > routes

@@ -9,3 +9,8 @@ type ErrorResult struct {
 	Code    int    `json:"code"`
 	Message string `json:"message"`
 }
+
+type ProductResult struct {
+	Status int    `json:"status"`
+	Data interface{} `json:"data"`
+}
